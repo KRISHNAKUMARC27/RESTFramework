@@ -1,0 +1,12 @@
+exceptions:
+  restgw:
+    - name: javax.validation.ConstraintViolationException
+      httpstatus: 400
+      code: ERR4001
+      reason: Input Validation failed
+    - name: com.example.krish.model.TMFException
+      context: auth_unavailable
+      httpstatus: 400
+      code: ERR4001
+      reason: Input Validation failed
+     
